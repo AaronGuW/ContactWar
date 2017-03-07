@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+    <RelativeLayout
+        android:id="@+id/number1_column"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="55dp"
+        android:padding="10dp"
+        android:background="@drawable/rectanglealpha">
+
+        <ImageView
+            android:id="@+id/n1_bottom"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/mbottom"
+            android:layout_below="@+id/n1"/>
+
+        <ImageView
+            android:id="@+id/n1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/magician"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/n1hp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hplogo"
+            android:layout_below="@+id/n1_bottom"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/atk_logo"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/n1hp"/>
+
+        <TextView
+            android:id="@+id/n1hp_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/n1hp"
+            android:layout_below="@id/n1_bottom"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/n1atk_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/n1hp"
+            android:layout_below="@id/n1hp_data"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_column"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="235dp"
+        android:padding="10dp"
+        android:background="@drawable/rectanglealpha">
+
+        <ImageView
+            android:id="@+id/user_bottom"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/mbottom"
+            android:layout_below="@+id/user"/>
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/magician"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/uhp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hplogo"
+            android:layout_below="@+id/user_bottom"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/atk_logo"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/uhp"/>
+
+        <TextView
+            android:id="@+id/uhp_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/uhp"
+            android:layout_below="@id/user_bottom"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/uatk_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/uhp"
+            android:layout_below="@id/uhp_data"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/number2_column"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="415dp"
+        android:padding="10dp"
+        android:background="@drawable/rectanglealpha">
+
+        <ImageView
+            android:id="@+id/n2_bottom"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/mbottom"
+            android:layout_below="@+id/n2"/>
+
+        <ImageView
+            android:id="@+id/n2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/magician"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/n2hp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hplogo"
+            android:layout_below="@+id/n2_bottom"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/atk_logo"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/n2hp"/>
+
+        <TextView
+            android:id="@+id/n2hp_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/n2hp"
+            android:layout_below="@id/n2_bottom"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/n2atk_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/n2hp"
+            android:layout_below="@id/n2hp_data"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recbtnbg"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:text="退出队伍"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="260dp"/>
+
+</RelativeLayout>

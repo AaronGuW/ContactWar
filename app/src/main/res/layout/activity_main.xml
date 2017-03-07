@@ -1,0 +1,418 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/wrap"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:background="@drawable/rectanglealpha"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <LinearLayout
+                android:id="@+id/rank_title"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/per_rank"
+                    android:layout_width="145dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/personal_rank"
+                    android:textSize="18sp"
+                    android:padding="10dp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#AEA594"/>
+
+                <TextView
+                    android:id="@+id/team_rank"
+                    android:layout_width="144dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:text="@string/team_rank"
+                    android:textSize="18sp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_below="@+id/rank_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/cursor" />
+
+            <View
+                android:id="@+id/divide"
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:background="#AEA594"
+                android:layout_below="@+id/cursor"
+                android:layout_marginTop="2dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/per_team_rank"
+                android:layout_below="@+id/divide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/notebtn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/recbtnbg"
+            android:text="通知"
+            android:textSize="20dp"
+            android:layout_alignStart="@+id/wrap"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/warbtn"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:background="@drawable/worldwarbtn"
+            android:layout_toEndOf="@id/notebtn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/red_dot"
+            android:visibility="gone"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/reddot"
+            android:layout_alignTop="@+id/notebtn"
+            android:layout_alignStart="@+id/notebtn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_alignStart="@+id/my_contact"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/recbtnbg"
+            android:id="@+id/jump"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="角色信息">
+        </Button>
+
+        <Button
+            android:id="@+id/my_contact"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="90dp"
+            android:layout_toEndOf="@+id/wrap"
+            android:layout_below="@+id/jump"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/recbtnbg"
+            android:text="@string/my_contract"/>
+
+        <Button
+            android:id="@+id/my_team"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/my_contact"
+            android:layout_below="@+id/my_contact"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/recbtnbg"
+            android:text="@string/my_team"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/my_team"
+            android:layout_alignEnd="@+id/my_team"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/recbtnbg"
+            android:text="挑战怪物"
+            android:id="@+id/pve"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/task_list"
+        android:layout_width="350dp"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="-280dp">
+
+        <RelativeLayout
+            android:id="@+id/tasklist"
+            android:layout_width="350dp"
+            android:layout_height="280dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/tasklistbgup"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@drawable/tasklistbgmid"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@drawable/tasklistbgdown" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dailytask"
+                android:textSize="18sp"
+                android:padding="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="240dp"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar1"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:max="3"
+                    android_custom:textSize="12dp"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:id="@+id/task1logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/message"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/task1description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/roundProgressBar1"
+                    android:text="向任意联系人发送3条短信"/>
+
+                <ImageView
+                    android:id="@+id/task1rewardlogo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/task1description"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/exp"/>
+
+                <TextView
+                    android:id="@+id/task1expdata"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="60经验值"
+                    android:layout_alignTop="@+id/task1rewardlogo"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/task1rewardget"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="领取奖励"
+                    android:background="@drawable/recbtnbg"
+                    android:layout_below="@+id/task1rewardlogo"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="240dp"
+                android:layout_below="@id/title"
+                android:layout_marginStart="130dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar2"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:max="2"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:textSize="12dp"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:id="@+id/task2logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/phonecall"/>
+
+                <TextView
+                    android:id="@+id/task2description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_below="@id/roundProgressBar2"
+                    android:text="给任意联系人拨打2次电话"/>
+
+                <ImageView
+                    android:id="@+id/task2rewardlogo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/task2description"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/exp"/>
+
+                <TextView
+                    android:id="@+id/task2expdata"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="60经验值"
+                    android:layout_alignTop="@+id/task2rewardlogo"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/task2rewardget"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="领取奖励"
+                    android:background="@drawable/recbtnbg"
+                    android:layout_below="@+id/task2rewardlogo"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="240dp"
+                android:layout_below="@id/title"
+                android:layout_marginStart="245dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar3"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:textSize="12dp"
+                    android_custom:max="3"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true"
+                    android:layout_marginStart="5dp"/>
+
+                <ImageView
+                    android:id="@+id/task3logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/wand"/>
+
+                <TextView
+                    android:layout_below="@+id/roundProgressBar3"
+                    android:id="@+id/task3description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="挑战任意法师角色3次"/>
+
+                <ImageView
+                    android:id="@+id/task3rewardlogo"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/task3description"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/exp"/>
+
+                <TextView
+                    android:id="@+id/task3expdata"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="60经验值"
+                    android:layout_alignTop="@+id/task3rewardlogo"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/task3rewardget"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="领取奖励"
+                    android:background="@drawable/recbtnbg"
+                    android:layout_below="@+id/task3rewardlogo"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_below="@+id/tasklist"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:src="@drawable/huan"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

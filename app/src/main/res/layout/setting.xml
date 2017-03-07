@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_bg"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/skillbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="技能"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/basic_attack"
+        android:layout_toEndOf="@+id/skillbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/mnatklogo"/>
+
+    <ImageView
+        android:id="@+id/spec_cap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/flashlogo"
+        android:layout_toEndOf="@+id/basic_attack"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/skill1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_toEndOf="@id/spec_cap"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/skill2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/skill1" />
+
+    <ImageView
+        android:id="@+id/del_skill1_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baologo"
+        android:layout_below="@id/skill1"
+        android:layout_alignLeft="@id/skill1"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/del_skill1_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icelogo"
+        android:layout_alignLeft="@+id/skill1"
+        android:layout_below="@+id/del_skill1_1"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/del_skill2_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tornadologo"
+        android:layout_alignLeft="@id/skill2"
+        android:layout_below="@id/skill2"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/del_skill2_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/firelogo"
+        android:layout_alignBottom="@+id/del_skill1_2"
+        android:layout_alignLeft="@+id/skill2"/>
+
+    <ImageView
+        android:id="@+id/lock1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_alignLeft="@+id/skill1"
+        android:layout_alignBottom="@+id/del_skill1_1"/>
+
+    <ImageView
+        android:id="@+id/lock2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_alignLeft="@+id/skill1"
+        android:layout_alignBottom="@+id/del_skill1_2"/>
+
+    <ImageView
+        android:id="@+id/lock3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_alignLeft="@+id/skill2"
+        android:layout_alignBottom="@+id/del_skill2_1"/>
+
+    <ImageView
+        android:id="@+id/lock4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_alignLeft="@+id/skill2"
+        android:layout_alignBottom="@+id/del_skill2_2"/>
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="物品"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/del_skill1_2"/>
+
+    <ImageView
+        android:id="@+id/item_block"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/locklogo"
+        android:layout_alignLeft="@+id/basic_attack"
+        android:layout_below="@+id/del_skill1_2"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

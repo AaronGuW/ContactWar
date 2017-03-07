@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#FFC267"/>
+
+        <TextView
+            android:layout_width="540dp"
+            android:layout_height="match_parent"
+            android:background="#A5E852"
+            android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/hole1"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="38dp"
+        android:layout_toEndOf="@+id/tester4"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole2"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/hole1"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole3"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/hole2"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole4"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/hole3"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole5"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole6"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="130dp"
+        android:layout_toEndOf="@+id/hole5"
+        android:background="@drawable/corner_bg_white"/>
+
+    <TextView
+        android:id="@+id/hole7"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_bg_white"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="190dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="300dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="410dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="520dp"/>
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="4dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="195dp"/>
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="4dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="415dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="25dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="185dp"
+        android:layout_marginStart="245dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="25dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="185dp"
+        android:layout_marginStart="465dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="30dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="245dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="30dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="465dp"/>
+
+    <View
+        android:layout_width="220dp"
+        android:layout_height="4dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="245dp"/>
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="25dp"
+        android:background="#83E8DA"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="355dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="参赛者"
+            android:background="#FF655A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_bg"
+            android:text="测试者1"
+            android:id="@+id/tester1"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:layout_below="@+id/title"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_bg"
+            android:text="测试者2"
+            android:id="@+id/tester2"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tester1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_bg"
+            android:text="测试者3"
+            android:id="@+id/tester3"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tester2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_bg"
+            android:text="测试者4"
+            android:id="@+id/tester4"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tester3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:padding="10dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@+id/hole4"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/hole3"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/submit_bg"/>
+
+</RelativeLayout>

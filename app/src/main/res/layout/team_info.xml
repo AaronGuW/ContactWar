@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_team"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="你可以选择"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/invite"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="邀请联系人"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="@drawable/recbtnbg"/>
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recbtnbg"
+            android:padding="10dp"
+            android:text="@string/hold_competition"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:background="#000000"
+        android:alpha="0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contactlisttab"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:focusable="true"
+        android:visibility="gone"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="175dp"
+        android:padding="10dp"
+        android:alpha="0"
+        android:background="@drawable/rectanglealpha">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择您要邀请的联系人"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="1dp"
+            android:background="#aea974"
+            />
+
+        <ListView
+            android:id="@+id/contactlist"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="5dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/chooseok"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="确定"
+            android:background="@drawable/recbtnbg"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/optionstab"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="175dp"
+        android:focusable="true"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:background="@drawable/rectanglealpha">
+
+        <TextView
+            android:id="@+id/typehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择比武类型"/>
+
+        <Spinner
+            android:id="@+id/typeselector"
+            android:layout_marginTop="5dp"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/typehead"
+            android:entries="@array/typeoptions">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/invitehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择邀请人数"
+            android:layout_below="@+id/typehead"
+            android:layout_marginTop="50dp"/>
+
+        <Spinner
+            android:id="@+id/inviteselector"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/invitehead"
+            android:layout_marginTop="5dp"
+            android:entries="@array/inviteoptions">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/timehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择开始时间"
+            android:layout_below="@+id/invitehead"
+            android:layout_marginTop="50dp"/>
+
+        <Spinner
+            android:id="@+id/day"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/timehead"
+            android:layout_marginTop="5dp"
+            android:entries="@array/dayoptions">
+
+        </Spinner>
+
+        <TextView
+            android:text="天"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/day"
+            android:layout_alignBottom="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"/>
+
+        <Spinner
+            android:id="@+id/hour"
+            android:layout_toRightOf="@+id/day"
+            android:layout_alignBottom="@+id/day"
+            android:layout_marginStart="25dp"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:entries="@array/houroptions">
+        </Spinner>
+
+        <TextView
+            android:text="时"
+            android:layout_toRightOf="@+id/hour"
+            android:layout_marginStart="2dp"
+            android:layout_alignBottom="@+id/hour"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="确定"
+            android:background="@drawable/recbtnbg"
+            android:layout_below="@+id/timehead"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="取消"
+            android:background="@drawable/recbtnbg"
+            android:layout_below="@+id/timehead"
+            android:layout_toRightOf="@+id/ok"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

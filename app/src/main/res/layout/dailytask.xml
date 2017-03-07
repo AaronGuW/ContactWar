@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/task_list"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-300dp">
+
+        <RelativeLayout
+            android:id="@+id/tasklist"
+            android:layout_width="400dp"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#CCC8C3"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#F9F4FF"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#CCC8C3" />
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dailytask"
+                android:textSize="20sp"
+                android:padding="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_below="@id/title"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar1"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:max="3"
+                    android_custom:textSize="15dp"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true" />
+
+                <ImageView
+                    android:id="@+id/task1logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/message"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/task1description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/roundProgressBar1"
+                    android:text="向任意联系人发送3条短信"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_below="@id/title"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar2"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:max="2"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:textSize="15dp"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true" />
+
+                <ImageView
+                    android:id="@+id/task2logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/phonecall"/>
+
+                <TextView
+                    android:id="@+id/task2description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_below="@id/roundProgressBar2"
+                    android:text="向任意联系人拨打2次电话"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:layout_below="@id/title"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.example.aaron.contractwar.RoundProgressBar
+                    android:id="@+id/roundProgressBar3"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android_custom:roundColor="#CCC8C3"
+                    android_custom:roundWidth="5dip"
+                    android_custom:textSize="15dp"
+                    android_custom:max="3"
+                    android_custom:textColor="#CCC8C3"
+                    android_custom:roundProgressColor="#CD3333"
+                    android_custom:textIsDisplayable="true" />
+
+                <ImageView
+                    android:id="@+id/task3logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/wand"/>
+
+                <TextView
+                    android:layout_below="@+id/roundProgressBar3"
+                    android:id="@+id/task3description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="挑战任意法师角色3次"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_below="@+id/tasklist"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:src="@drawable/huan"/>
+
+    </RelativeLayout>
+
+
+<!--    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="increase"/>-->
+</LinearLayout>

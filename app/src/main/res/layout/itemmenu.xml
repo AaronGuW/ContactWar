@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:background="@drawable/itemmenubg">
+
+    <Button
+        android:id="@+id/equip"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:text="装备"
+        android:textColor="#AEA592"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:background="@drawable/itemfbg"/>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="#7fFFFFFF"/>
+
+    <Button
+        android:id="@+id/give"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:text="赠送"
+        android:textColor="#AEA592"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:background="@drawable/itemfbg"/>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="#7fFFFFFF"/>
+    <Button
+        android:id="@+id/eqinfo"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:text="详情"
+        android:gravity="center_vertical"
+        android:textColor="#AEA592"
+        android:paddingLeft="5dp"
+        android:background="@drawable/itemfbg"/>
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="#7fFFFFFF"/>
+    <Button
+        android:id="@+id/abandon"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:text="丢弃"
+        android:gravity="center_vertical"
+        android:textColor="#AEA592"
+        android:paddingLeft="5dp"
+        android:background="@drawable/itemfbg"/>
+
+
+</LinearLayout>

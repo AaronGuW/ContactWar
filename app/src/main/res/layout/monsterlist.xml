@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+    
+    <RelativeLayout
+        android:id="@+id/m1"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rectanglealpha"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/m1_img"
+            android:layout_width="90dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/monster1"/>
+
+        <TextView
+            android:id="@+id/m1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="怪物1"
+            android:layout_below="@+id/m1_img"
+            android:layout_marginStart="30dp"/>
+
+        <Button
+            android:id="@+id/m1_fight"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/recbtnbg"
+            android:text="挑战"
+            android:layout_below="@+id/m1_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/m2"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/rectanglealpha"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/m2_img"
+            android:layout_width="90dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/monster2"/>
+
+        <TextView
+            android:id="@+id/m2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:text="怪物2"
+            android:layout_below="@+id/m2_img"
+            android:layout_marginStart="30dp"/>
+
+        <Button
+            android:id="@+id/m2_fight"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/recbtnbg"
+            android:text="挑战"
+            android:layout_below="@+id/m2_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="230dp"
+        android:background="@drawable/rectanglealpha"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="25sp"
+                android:text="敬\n请\n期\n待\n..."/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

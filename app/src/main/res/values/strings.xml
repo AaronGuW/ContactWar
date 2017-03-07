@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typeoptions">
+        <item>4进1</item>
+        <item>8进1</item>
+        <item>16进1</item>
+        <item>8进2</item>
+        <item>16进2</item>
+    </string-array>
+    <string-array name="inviteoptions">
+        <item>全部</item>
+        <item>自选</item>
+    </string-array>
+    <string-array name="dayoptions">
+        <item>明</item>
+        <item>后</item>
+        <item>大后</item>
+    </string-array>
+    <string-array name="houroptions">
+        <item>8</item>
+        <item>9</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string name="app_name">联系人大作战</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="personal_rank">个人排行榜</string>
+    <string name="team_rank">团队排行榜</string>
+    <string name="my_info">我的形象</string>
+    <string name="my_contract">我的通讯录</string>
+    <string name="my_team">我的团队</string>
+    <string name="your_intimacy">你们之间的亲密度等级为</string>
+    <string name="buff_intro">与ta组队您将获得以下属性加成</string>
+    <string name="team_alert">确定要和ta组队吗？</string>
+    <string name="no_team">你暂时未加入任何队伍！</string>
+    <string name="hold_competition">举办比武招亲</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="send_to">分享</string>
+    <string name="dailytask">每日任务</string>
+
+    <string name="login_name">请输入用户名</string>
+    <string name="login_password">请输入密码</string>
+    <string name="register_re_password">请再输入一遍密码</string>
+    <string name="register_nickname">请给你的角色起一个昵称</string>
+    <string name="register_submit">确认注册</string>
+    <string name="register_name">请输入用户名</string>
+    <string name="register_password">请输入密码</string>
+    <string name="login_submit">确认登录</string>
+    <string name="login_wait">登录中请稍后</string>
+    <string name="register_wait">注册中，请稍后</string>
+    <string name="turn_to_register">还没有账号？</string>
+    <string name="turn_to_login">已有账号，点此登录</string>
+
+</resources>

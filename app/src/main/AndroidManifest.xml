@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aaron.contractwar" >
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="ContactWar"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <service android:name=".Request$reqreceiver">
+            <intent-filter>
+                <action android:name="com.example.aaron.contractwar.req_receiver"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".ContactListActivity"
+            android:label="ContactListActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".fightsurfaceview"
+            android:label="fightsurfaceview"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".TeamInfoActivity"
+            android:label="TeamInfoActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".CompeteActivity"
+            android:label="CompeteActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".MyteamActivity"
+            android:label="myteamactivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".character"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".monsterlistactivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".pve"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".RequestActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".WorldWarActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".WorldwarCmptActivity"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

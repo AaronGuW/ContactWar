@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/warbg">
+
+    <Button
+        android:id="@+id/fight_btn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fight_btn"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/sorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="很抱歉 T T\n您未报名此次世界大战!"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="150dp"/>
+
+    <TextView
+        android:id="@+id/clhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余次数:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="260dp"/>
+
+    <TextView
+        android:id="@+id/chanceleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_toEndOf="@id/clhead"
+        android:layout_alignBottom="@+id/clhead"/>
+
+    <TextView
+        android:id="@+id/scorehead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前团队积分:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/chanceleft"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="240dp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="--"
+        android:layout_alignBottom="@+id/scorehead"
+        android:layout_toEndOf="@+id/scorehead"/>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/refresh"
+        android:layout_toEndOf="@+id/scorehead"
+        android:layout_alignTop="@+id/scorehead"/>
+
+
+</RelativeLayout>

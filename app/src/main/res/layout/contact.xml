@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:background="@drawable/rectanglealpha"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:focusable="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/my_contract"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"/>
+            <AutoCompleteTextView
+                android:id="@+id/search_bar"
+                android:layout_height="40dp"
+                android:layout_width="110dp"
+                android:completionThreshold="1"
+                android:hint="查找联系人"
+                android:layout_marginStart="85dp"
+                android:layout_gravity="bottom"
+                android:imeOptions="flagNoExtractUi"
+                />
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_marginStart="6dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/search"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#AEA592"/>
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:padding="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+        </ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectanglealpha"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选个联系人看看吧"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#AEA592"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/img_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:alpha="0.7"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="选中或搜索联系人\n可以查看他的角色信息哦~"/>
+
+            <ImageView
+                android:id="@+id/friend_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/hp_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/hplogo"
+                    android:visibility="gone"
+                    android:layout_marginStart="20dp"/>
+                <!--<TextView
+                    android:id="@+id/hp_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="血量： "
+                    android:visibility="visible"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"/>-->
+
+                <ImageView
+                    android:id="@+id/atk_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/atk_logo"
+                    android:layout_below="@+id/hp_head"/>
+
+                <!--<TextView
+                    android:id="@+id/atk_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="攻击： "
+                    android:visibility="visible"
+                    android:layout_below="@+id/hp_head"
+                    android:textSize="20sp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hp"
+                    android:visibility="gone"
+                    android:text="22222"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/hp_head"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/atk"
+                    android:visibility="gone"
+                    android:text="11111"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/atk_head"
+                    android:layout_below="@id/hp_head"/>
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/fightbtn"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/hp"
+                    android:id="@+id/fight_btn"/>
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/invitebtn"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:id="@+id/invite_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/fight_btn"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

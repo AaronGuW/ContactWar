@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/contact_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="3dp"
+        android:src="@drawable/contact_photo"/>
+
+    <TextView
+        android:id="@+id/reqtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知类型"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/contact_photo"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="刚刚"
+        android:layout_toRightOf="@id/reqtype"
+        android:layout_alignBottom="@id/reqtype"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#545454"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/reqcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="18918261855邀请您加入队伍！"
+        android:layout_toEndOf="@+id/contact_photo"
+        android:layout_below="@+id/reqtype"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#AEA594"/>
+
+        <Button
+            android:id="@+id/ac"
+            android:focusable="false"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="6dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/accept"/>
+
+        <Button
+            android:id="@+id/delreq"
+            android:focusable="false"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="6dp"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:background="@drawable/del"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

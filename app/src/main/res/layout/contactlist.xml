@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectanglealpha">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="请选择您要赠送的联系人"
+        android:textSize="20sp"
+        android:padding="12dp"/>
+
+    <View
+        android:layout_below="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="#AEA594"/>
+
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_below="@+id/title"
+        android:padding="3dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp">
+
+    </ListView>
+
+
+
+</RelativeLayout>

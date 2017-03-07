@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- 填充的颜色 -->
+    <solid android:color="#FFF0FF" />
+    <!-- 设置按钮的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="5dip" />
+
+    <!-- padding：Button里面的文字与Button边界的间隔 -->
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp"
+        />
+    <gradient
+        android:startColor="@android:color/white"
+        android:centerColor="@android:color/holo_blue_bright"
+        android:endColor="@android:color/darker_gray"
+        android:angle="45"
+        android:type="radial"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:gradientRadius="900"/>
+</shape>
+
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+&lt;!&ndash; 圆角 &ndash;&gt;
+<corners
+    android:radius="9dp"
+    android:topLeftRadius="2dp"
+    android:topRightRadius="2dp"
+    android:bottomLeftRadius="2dp"
+    android:bottomRightRadius="2dp"/>&lt;!&ndash; 设置圆角半径 &ndash;&gt;
+
+&lt;!&ndash; 渐变 &ndash;&gt;
+<gradient
+    android:startColor="@android:color/white"
+    android:centerColor="@android:color/black"
+    android:endColor="@android:color/black"
+    android:useLevel="true"
+    android:angle="45"
+    android:type="radial"
+    android:centerX="0"
+    android:centerY="0"
+    android:gradientRadius="90"/>
+
+&lt;!&ndash; 间隔 &ndash;&gt;
+<padding
+    android:left="2dp"
+    android:top="2dp"
+    android:right="2dp"
+    android:bottom="2dp"/>&lt;!&ndash; 各方向的间隔 &ndash;&gt;
+
+&lt;!&ndash; 大小 &ndash;&gt;
+<size
+    android:width="50dp"
+    android:height="50dp"/>&lt;!&ndash; 宽度和高度 &ndash;&gt;
+
+&lt;!&ndash; 填充 &ndash;&gt;
+<solid
+    android:color="@android:color/white"/>&lt;!&ndash; 填充的颜色 &ndash;&gt;
+
+&lt;!&ndash; 描边 &ndash;&gt;
+<stroke
+    android:width="2dp"
+    android:color="@android:color/black"
+    android:dashWidth="1dp"
+    android:dashGap="2dp"/>
+
+</shape>-->
